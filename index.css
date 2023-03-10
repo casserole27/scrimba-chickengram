@@ -1,7 +1,8 @@
 /*
-Author: Cassie Lewis
-https://clewisdev.com
-Date: 
+Scrimba M4 Solo Project: Oldagram 
+    Author: Cassie Lewis
+    https://clewisdev.com
+    Date: March 2023
 */
 
 /*
@@ -14,6 +15,8 @@ https://coolors.co
 :root {
     
     /*COLORS*/
+    --background-color: rgb(255, 255, 255);
+    --text-color: rgb(20, 20, 20);
   
     
     /*BORDER RADIUS*/
@@ -21,11 +24,7 @@ https://coolors.co
     --br-round: 50%;
     
     /*FONT SIZES*/
-    --fs-xs: 1rem;
-    --fs-s: 1.25rem;
-    --fs-m: 1.5rem;
-    --fs-l: 2.25rem;
-    --fs-title: 2.5rem;
+    --fs-s: .8125rem
 }
 
 /****** MARGIN AND PADDING RESET ******/
@@ -37,3 +36,9 @@ https://coolors.co
 }
 
 /******* GLOBAL STYLES *******/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*? lAYOUT - FLEXBOX

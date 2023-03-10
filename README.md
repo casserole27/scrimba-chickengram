@@ -42,39 +42,17 @@ Stretch goals:
 
 ## My process
 
-Create Github repository
-- initialize README
-
-Setup basic HTML file 
-- insert my personal comment credit
-- head tag includes stylesheet/link and fonts, double check for meta viewport tag
-- initial semantic, accessible markup: placing main, heading and paragraph tags
- - commit and push
-
-Setup basic CSS file
-- insert my personal comment credit
-- decide on mobile or desktop-first design based on design file examples
-- set up root selector with variables: colors, border radius, and font size
-- margin, padding, box-size reset, root
-- decide on global styles
-- commit and push
-
-Consult Figma design files
- - use rems or ems
- - adjust text properties: size, line height, color
- - insert images and color properties
- - decide on layout tools and markup accordingly
- - add effects: borders, box shadows, etc
- - commit and push after each major change
-
-Publish live URL
-
-Check markup and accessibility
+- Create Github repository
+- Set up basic HTML file 
+- Set up basic CSS file
+- Set up basic JavaScript file
+- Consult Figma design files
+- Project work
+- Publish live URL
+- Check markup and accessibility
 (https://validator.w3.org/)
 (https://wave.webaim.org/)
- - make adjustments as necessary
- - commit and push
- - finish README
+- README file
 
 
 ### Built with
