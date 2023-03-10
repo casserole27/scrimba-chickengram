@@ -27,44 +27,75 @@
 
         <header class="header-container">
 
-            <img src="images/logo.png" alt="">
-            <img src="images/user-avatar.png" alt="">
+            <img src="images/logo.png" 
+                class="logo"
+                alt="">
+            <img src="images/user-avatar.png" 
+                class="avatar" 
+                alt="">
             
         </header>
 
-        <section class="poster-info">
+        <section class="poster-info-container">
 
             <img src="/images/avatar-vangogh.jpg" 
                 alt="" 
+                class="avatar"
                 id="post-avatar">
+
+            <div class="poster-text-container">    
 
             <h1 id="post-name">
                 Vincent van Gogh
             </h1>
 
-            <h2 id="post-location">
+            <p 
+                class="location"
+                id="post-location">
                 Zudert, Netherlands
-            </h2>
+            </p>
+
+            </div> <!-- close div for poster-text-container-->
 
         </section>
 
+        <section class="image-container">
+
         <img src="/images/post-vangogh.jpg"
-            alt="" id="post-image">
+            alt="" 
+            class="post-image"
+            id="post-image">
+
+        </section>    
 
         <footer class="footer-container">
-            <img src="/images/icon-heart.png" alt="">
-            <img src="/images/icon-comment.png" alt="">
-            <img src="/images/icon-dm.png" alt="">
 
-            <p class="likes">
-                <span id="post-likes"> 
+            <div class="icons-container margin-bottom">
+            
+                <img src="/images/icon-heart.png" 
+                class="icons"
+                alt="">
+            <img src="/images/icon-comment.png" 
+                class="icons"
+                alt="">
+            <img src="/images/icon-dm.png" 
+                class="icons"
+                alt="">
+            
+            </div> <!--close icons-container div-->    
+
+            <p class="likes margin-bottom font-weight">
+                <span 
+                    id="post-likes"> 
                     21,492</span>
                     likes</p>
             
-            <p class="comments">
-                <span id="post-username">
+            <p class="comments margin-bottom">
+                <span 
+                    class="font-weight"
+                    id="post-username">
                     vincey1853</span>
-                <span id="post-comment">
+                    <span id="post-comment">
                     just took a few mushrooms lol</span>
             </p>    
         </footer>    

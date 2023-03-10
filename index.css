@@ -38,7 +38,85 @@ https://coolors.co
 /******* GLOBAL STYLES *******/
 
 body {
+    background-color: rgb(211, 211, 211);
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: var(--fs-s);
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: center;
 }
 
-/*? lAYOUT - FLEXBOX
+h1 {
+    font-size: var(--fs-s);
+}
+
+
+/****** UTILITY CLASSES ******/
+
+.margin-bottom {
+    margin-bottom: .8rem;
+}
+
+.font-weight {
+    font-weight: 700;
+}
+
+/****** LAYOUT ******/
+
+.main-container {
+    background-color: var(--background-color);
+    width: 375px;
+    /* border: 5px solid hotpink; */
+}
+
+.header-container , .poster-info-container, .footer-container{
+    width: 100%;
+}
+
+.header-container {
+    padding: .5rem 1rem;
+    border-bottom: 2px solid lightgray;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.poster-info-container {
+    padding: .625rem;
+    
+    display: flex;
+    gap: .5rem
+}
+
+.icons-container {
+    display: flex;
+    gap: .8rem;
+}
+
+.footer-container {
+    padding: 0 .625rem;
+}
+
+/******IMAGES STYLING ******/
+
+.logo {
+    width: 127px;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: var(--br-round);
+}
+
+.post-image {
+    width: 100%;
+    margin-bottom: 1.25rem;
+}
+
+.icons {
+    width: 25px;
+    height: 25px;
+}
