@@ -1,3 +1,10 @@
+/*
+Scrimba M4 Solo Project: Oldagram 
+    Author: Cassie Lewis
+    https://clewisdev.com
+    Date: March 2023
+*/
+
 const posts = [
     {
         name: "Vincent van Gogh",
@@ -28,3 +35,13 @@ const posts = [
     }
 ]
 
+/*
+//? IDEAS FOR RENDERING
+//? CHANGE EACH OF THESE FIELDS
+const postName
+const postLocation
+const postAvatar
+const postImage
+const postComment
+const postLikes
+*/
