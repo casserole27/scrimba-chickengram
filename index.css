@@ -1,13 +1,8 @@
 /*
-Scrimba M4 Solo Project: Oldagram 
+    Scrimba M4 Solo Project: Oldagram 
     Author: Cassie Lewis
     https://clewisdev.com
     Date: March 2023
-*/
-
-/*
-COOLORS color palette link
-https://coolors.co
 */
 
 /****** VARIABLES ******/
@@ -131,4 +126,10 @@ button {
 .icons {
     width: 25px;
     height: 25px;
+    opacity: .5;
 }
+
+.icons:hover {
+    opacity: 1;
+}
+
