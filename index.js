@@ -58,6 +58,7 @@ for (let i = 0; i < posts.length; i++) {
             <button id="heart-icon">
                 <img src="/images/icon-heart.png" 
                     class="icons"
+                    class="heart-icon"
                     alt="">
             </button>    
 
@@ -92,19 +93,17 @@ for (let i = 0; i < posts.length; i++) {
 mainContainer.innerHTML = html;
 
 //! IDEAS FOR INCREASING LIKES
-//? pull the value and increment it by one on each dblclick
-//? how to get value when it isn't an input, or change to input?
 //? only first post can be dblcliked?
+//? how to do dblclick on each rendering?
 
-/*
 const heartIcon = document.getElementById("heart-icon");
 let numLikes = document.getElementById("post-likes");
+let countInc = numLikes.innerHTML;
+
 
 function increaseLikes() {
-    console.log(heartIcon);
-    console.log(numLikes);
-    numLikes++
-}
+    countInc++
+    numLikes.innerHTML = countInc;
+};
 
 heartIcon.addEventListener("dblclick", increaseLikes);
-*/
