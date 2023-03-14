@@ -70,21 +70,21 @@ button {
 /****** LAYOUT ******/
 
 .main-container {
-    width: 375px;
+    max-width: 375px;
     margin-bottom: 4rem;
-    /* border: 5px solid hotpink; */
 }
 
 .header-container {
-    width: 375px;
+    max-width: 375px;
     background-color: var(--background-color);
     padding: .5rem 1rem;
     border-bottom: 2px solid lightgray;
 
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
 }
+
 .poster-info-container, .footer-container{
     width: 100%;
 }
@@ -109,10 +109,16 @@ button {
 /******IMAGES STYLING ******/
 
 .logo {
-    width: 127px;
+    width: 50%;
+    margin-right: auto;
+
 }
 
-.avatar {
+.user-avatar {
+    margin-left: auto;
+}
+
+.avatar, .user-avatar {
     width: 34px;
     height: 34px;
     border-radius: var(--br-round);

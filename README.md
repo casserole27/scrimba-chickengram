@@ -31,6 +31,9 @@ Stretch goals:
 - use JavaScript to render out all three posts
 - increase the likes when double clicking the post
 
+Personal stretch goals:
+- responsiveness
+
 
 ### Screenshot
 
