@@ -52,6 +52,11 @@ h1 {
     font-size: var(--fs-s);
 }
 
+button {
+    background-color: var(--background-color);
+    border: none;
+}
+
 
 /****** UTILITY CLASSES ******/
 
