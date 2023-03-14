@@ -131,4 +131,16 @@ button {
 .icons {
     width: 25px;
     height: 25px;
+<<<<<<< Updated upstream
 }
+=======
+    opacity: .5;
+}
+
+.icons:hover {
+    opacity: 1;
+}
+
+
+
+>>>>>>> Stashed changes
