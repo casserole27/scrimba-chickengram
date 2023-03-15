@@ -36,7 +36,7 @@ body {
     background-color: rgb(211, 211, 211);
     font-family: 'Source Sans Pro', sans-serif;
     font-size: var(--fs-s);
-    margin-top: 2rem;
+    margin-top: 1rem;
 
     display: flex;
     flex-direction: column;
@@ -93,7 +93,12 @@ button {
     padding: .625rem;
     
     display: flex;
+    align-items: center;
     gap: .5rem
+}
+
+.location {
+    margin-bottom: .5rem;
 }
 
 .icons-container {
