@@ -73,6 +73,9 @@ Personal stretch goals:
 [Project scrim](https://scrimba.com/learn/frontend/solo-project-oldagram-co2274297820a9405442e3a2a)
 [Scrimba help](https://projects.scrimba.com/oldagram)
 
+[.filter method](https://scrimba.com/scrim/coe224f7989e7291a3ed38fe0?pl=pnXvVsP)
+[.forEach method](https://scrimba.com/learn/frontend/aside-foreach-ck69yqhD)
+
 
 ## Author
 

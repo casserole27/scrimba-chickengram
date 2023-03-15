@@ -9,19 +9,18 @@ Scrimba M4 Solo Project: Oldagram
 
 import { posts } from './data.js'
 
-const mainContainer = document.getElementById("main-container");
-
-let html = ""
-
-
+    
 /****** RENDER POSTS ******/
 
-for (let i = 0; i < posts.length; i++) {
+function getFeed(){
+    let html = "";    
+    posts.forEach(function(post) {   
+   
     html += `
     
         <section class="poster-info-container background-color">
 
-            <img src=${posts[i].avatar} 
+            <img src=${post.avatar} 
                 alt="" 
                 class="avatar"
                 id="post-avatar">
@@ -29,13 +28,13 @@ for (let i = 0; i < posts.length; i++) {
             <div class="poster-text-container">    
 
             <h1 id="post-name">
-                ${posts[i].name}
+                ${post.name}
             </h1>
 
             <p 
                 class="location"
                 id="post-location">
-                ${posts[i].location}
+                ${post.location}
             </p>
 
             </div> <!-- close div for poster-text-container-->
@@ -44,7 +43,7 @@ for (let i = 0; i < posts.length; i++) {
 
         <section class="image-container background-color">
 
-            <img src="${posts[i].post}"
+            <img src="${post.post}"
                 alt="" 
                 class="post-image"
                 id="post-image">
@@ -55,12 +54,13 @@ for (let i = 0; i < posts.length; i++) {
 
             <div class="icons-container margin-bottom">
             
-            <button id="heart-icon">
-                <img src="/images/icon-heart.png" 
-                    class="icons"
-                    class="heart-icon"
-                    alt="">
-            </button>    
+          
+            <img src="/images/icon-heart.png" 
+                class="icons heart-icon"
+                class="heart-icon"
+                data-like="${post.postid}"
+                alt="">
+             
 
             <img src="/images/icon-comment.png" 
                 class="icons"
@@ -74,36 +74,52 @@ for (let i = 0; i < posts.length; i++) {
             <p class="likes margin-bottom font-weight">
                 <span 
                     id="post-likes"> 
-                    ${posts[i].likes}</span>
+                    ${post.likes}</span>
                     likes</p>
             
             <p class="comments">
                 <span 
                     class="font-weight"
                     id="post-username">
-                    ${posts[i].username}</span>
+                    ${post.username}</span>
                     <span id="post-comment">
-                    ${posts[i].comment}</span>
+                    ${post.comment}</span>
             </p>    
         </footer>    
         
     `
+})
+    return html;
+}    
+    
+function renderFeed() {
+    const mainContainer = document.getElementById("main-container").innerHTML = getFeed();
 }
 
-mainContainer.innerHTML = html;
+renderFeed();
 
-//! IDEAS FOR INCREASING LIKES
-//? only first post can be dblcliked?
-//? how to do dblclick on each rendering?
+ 
+document.addEventListener("dblclick", function(e) {
+        
+    const target = e.target.dataset.like;
+    if (target) {
+        likeClicks(target);        
+    };
+});
 
-const heartIcon = document.getElementById("heart-icon");
-let numLikes = document.getElementById("post-likes");
-let countInc = numLikes.innerHTML;
-
-
-function increaseLikes() {
-    countInc++
-    numLikes.innerHTML = countInc;
-};
-
-heartIcon.addEventListener("dblclick", increaseLikes);
+function likeClicks(postId) {
+      
+     const targetPost = posts.filter(function(post) {
+        return post.postid === postId;
+    })[0]
+    
+    if (targetPost.isLiked) {
+        targetPost.likes--;
+               
+    } else {
+        targetPost.likes++
+    }; 
+   targetPost.isLiked = !targetPost.isLiked;
+    
+     renderFeed();
+}         
