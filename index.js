@@ -57,16 +57,16 @@ function getFeed(){
             <div class="icons-container margin-bottom">
             
           
-            <img src="/images/icon-heart.png" 
+            <img src="images/icon-heart.png" 
                 class="icons heart-icon"
                 data-like="${post.postid}"
                 alt="heart-shaped icon">
              
 
-            <img src="/images/icon-comment.png" 
+            <img src="images/icon-comment.png" 
                 class="icons"
                 alt="word cloud comment icon">
-            <img src="/images/icon-dm.png" 
+            <img src="images/icon-dm.png" 
                 class="icons"
                 alt="direct message arrow icon">
             
