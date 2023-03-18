@@ -1,35 +1,60 @@
 export const posts = [
     {
-        name: "Vincent van Gogh",
-        username: "vincey1853",
-        location: "Zundert, Netherlands",
-        avatar: "images/avatar-vangogh.jpg",
-        post: "images/post-vangogh.jpg",
-        comment: "just took a few mushrooms lol",
+        name: "Mrs. Business",
+        location: "in the garden digging where I'm not supposed to",
+        avatar: "images/avatar-mrsbusiness.jpg",
+        post: "images/post-mrsbusiness.jpg",
+        username: "thebusiness2014",
+        comment: "I am a naughty bird.",
         likes: 21,
         isLiked: false,
         postid: "1"
     },
     {
-        name: "Gustave Courbet",
-        username: "gus1819",
-        location: "Ornans, France",
-        avatar: "images/avatar-courbet.jpg",
-        post: "images/post-courbet.jpg",
-        comment: "i'm feelin a bit stressed tbh",
+        name: "Gray Raygun",
+        location: "on the couch playing Zelda",
+        avatar: "images/avatar-grayraygun.png",
+        post: "images/post-beardiebird.jpg",
+        username: "thebeardiestbird2000",
+        comment: "I like sausages!!!",
         likes: 4,
         isLiked: false,
         postid: "2"
     },
-        {
-        name: "Joseph Ducreux",
-        username: "jd1735",
-        location: "Paris, France",
-        avatar: "images/avatar-ducreux.jpg",
-        post: "images/post-ducreux.jpg",
-        comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
+    
+    {
+        name: "Mr. Pickleman",
+        location: "in the garden eating pickles",
+        avatar: "images/avatar-mrpickleman.jpg",
+        post: "images/post-checkers.jpg",
+        username: "dabigboi42",
+        comment: "Why me?!?!",    
         likes: 152,
         isLiked: false,
         postid: "3"
-    }
+    },
+
+    {
+        name: "Mrs. Pickleman",
+        location: "in bed reading a book",
+        avatar: "images/avatar-mrspickleman.jpg",
+        post: "images/post-mrsjiggles.jpg",
+        username: "itsthejiggles27",
+        comment: "Look at ma jiggles!!!",    
+        likes: 1980,
+        isLiked: false,
+        postid: "4"
+    },
+
+    {
+        name: "Ton Ton",
+        location: "sulking under the couch",
+        avatar: "images/avatar-tonton.jpg",
+        post: "images/post-billina.jpg",
+        username: "billinaofoz1939",
+        comment: "Don't touch my babbies.",    
+        likes: 42,
+        isLiked: false,
+        postid: "5"
+    },
 ]

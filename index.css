@@ -43,10 +43,6 @@ body {
     align-items: center;
 }
 
-h1 {
-    font-size: var(--fs-s);
-}
-
 button {
     background-color: var(--background-color);
     border: none;
@@ -67,22 +63,42 @@ button {
     font-weight: 700;
 }
 
-/****** LAYOUT ******/
-
-.main-container {
-    max-width: 375px;
-    margin-bottom: 4rem;
-}
+/****** HEADER LAYOUT ******/
 
 .header-container {
     max-width: 375px;
     background-color: var(--background-color);
     padding: .5rem 1rem;
     border-bottom: 2px solid lightgray;
+}
 
+ul {
+    list-style-type: none;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
+    gap: 5.5rem;
+}
+
+.logo {
+    font-family: 'Neucha', cursive;
+    font-size: 3rem;
+}
+
+.user-avatar {
+    display: block;
+}
+
+@media (max-width: 350px) {
+    ul {
+        gap: 2rem;
+    }
+}
+
+/****** LAYOUT ******/
+
+.main-container {
+    max-width: 375px;
+    margin-bottom: 4rem;
 }
 
 .poster-info-container, .footer-container{
@@ -113,19 +129,9 @@ button {
 
 /******IMAGES STYLING ******/
 
-.logo {
-    width: 50%;
-    margin-right: auto;
-
-}
-
-.user-avatar {
-    margin-left: auto;
-}
-
 .avatar, .user-avatar {
-    width: 34px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
     border-radius: var(--br-round);
 }
 
@@ -144,3 +150,11 @@ button {
     opacity: 1;
 }
 
+/****** TURN HEART RED ******/
+
+.icon-likes {
+    background-color: red;
+    border-radius: 40%;
+    padding: .5rem;
+    
+}

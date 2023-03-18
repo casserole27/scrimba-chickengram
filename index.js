@@ -27,9 +27,11 @@ function getFeed(){
 
             <div class="poster-text-container">    
 
-            <h1 id="post-name">
+            <p 
+                id="post-name"
+                class="font-weight">
                 ${post.name}
-            </h1>
+            </p>
 
             <p 
                 class="location"
@@ -57,7 +59,6 @@ function getFeed(){
           
             <img src="/images/icon-heart.png" 
                 class="icons heart-icon"
-                class="heart-icon"
                 data-like="${post.postid}"
                 alt="">
              
