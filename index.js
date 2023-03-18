@@ -46,7 +46,7 @@ function getFeed(){
         <section class="image-container background-color">
 
             <img src="${post.post}"
-                alt="" 
+                alt="image of ${post.username}" 
                 class="post-image"
                 id="post-image">
 
@@ -60,15 +60,15 @@ function getFeed(){
             <img src="/images/icon-heart.png" 
                 class="icons heart-icon"
                 data-like="${post.postid}"
-                alt="">
+                alt="heart-shaped icon">
              
 
             <img src="/images/icon-comment.png" 
                 class="icons"
-                alt="">
+                alt="word cloud comment icon">
             <img src="/images/icon-dm.png" 
                 class="icons"
-                alt="">
+                alt="direct message arrow icon">
             
             </div> <!--close icons-container div-->    
 
