@@ -108,7 +108,8 @@ function getFeed(){
 
 ### Continued development
 
-Accessibility - how to do alt text for rendered images
+- Accessibility - how to do alt text for rendered images
+- Turn heart red
 
 ### Useful resources
 

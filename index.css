@@ -70,13 +70,10 @@ button {
     background-color: var(--background-color);
     padding: .5rem 1rem;
     border-bottom: 2px solid lightgray;
-}
 
-ul {
-    list-style-type: none;
     display: flex;
     align-items: center;
-    gap: 5.5rem;
+    gap: 5rem;
 }
 
 .logo {
@@ -84,12 +81,8 @@ ul {
     font-size: 3rem;
 }
 
-.user-avatar {
-    display: block;
-}
-
 @media (max-width: 350px) {
-    ul {
+    .header-container {
         gap: 2rem;
     }
 }

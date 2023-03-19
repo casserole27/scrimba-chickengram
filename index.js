@@ -31,8 +31,8 @@ function getFeed(){
             <div class="poster-text-container">    
 
             <p 
-                id="post-name"
-                class="font-weight">
+                class="font-weight"
+                id="post-name">
                 ${post.name}
             </p>
 
@@ -62,20 +62,17 @@ function getFeed(){
           
             <img src="images/icon-heart.png" 
                 class="icons heart-icon"
-                data-like="${post.postid}"
-                alt="heart-shaped icon">
+                data-like="${post.postid}">
              
 
             <a href="https://www.backyardchickens.com/" target="_blank">
                 <img src="images/icon-comment.png" 
-                    class="icons"
-                    alt="word cloud comment icon">
-              </a>
+                    class="icons">
+            </a>
             
             <a href="${post.content}" target="_blank">  
                 <img src="images/icon-dm.png" 
-                    class="icons"
-                    alt="direct message arrow icon">
+                    class="icons">
             </a>
 
             </div> <!--close icons-container div-->    
@@ -83,16 +80,19 @@ function getFeed(){
             <p class="likes margin-bottom font-weight">
                 <span 
                     id="post-likes"> 
-                    ${post.likes}</span>
-                    likes</p>
+                    ${post.likes}
+                </span>
+            likes</p>
             
             <p class="comments">
                 <span 
                     class="font-weight"
                     id="post-username">
-                    ${post.username}</span>
+                    ${post.username}
+                </span>
                     <span id="post-comment">
-                    ${post.comment}</span>
+                    ${post.comment}
+                </span>
             </p>    
         </footer>    
         
