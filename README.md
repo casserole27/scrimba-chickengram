@@ -33,15 +33,17 @@ Stretch goals:
 
 Personal stretch goals:
 - responsiveness
+- icon functionality
+- personal design : Chickengram
 
 
 ### Screenshot
 
 ### Links
 
-- Scrim: [Scrim](https://scrimba.com/scrim/co66f4672bc42a373fbd1968f)
-- Github: [Github](https://github.com/casserole27/counter-app)
-- Live Site: [Live Site](https://www.clewisdev.com/counter-app/)
+- [Scrim](https://scrimba.com/scrim/cocf840e8981a3822a7204ebd)
+- [Github](https://github.com/casserole27/oldagram)
+- [Live Site](https://www.clewisdev.com/oldagram/)
 
 ## My process
 
@@ -60,13 +62,53 @@ Personal stretch goals:
 
 ### Built with
 
+- semantic HTML5
 - CSS custom properties
 - Responsive Web Design
+- vanilla JavaScript
 
 ### What I learned
 
+- Using JavaScript to render HTML for multiple posts of the same type with different data
+
+- HTML datasets: applying unique identifiers in order to identify data and decrease number of event listeners
+
+```javascript
+    <img src="images/icon-heart.png" 
+                class="icons heart-icon"
+                data-like="${post.postid}"
+                  //"Likes" data set that will help look for the selected post ID and increment its likes
+                alt="heart-shaped icon">
+  ```
+  
+- Event delegation: this is an event listener on the whole document, 
+  but it targets the "data-like" elements from the HTML and runs a function on them.
+
+```javascript
+  document.addEventListener("dblclick", function(e) {
+        
+    const target = e.target.dataset.like;
+    if (target) {
+        likeClicks(target);        
+    };
+});
+
+```
+- JS .filter() method : find and filter out data
+
+- JS .forEach() method : another way to iterate
+
+```javascript
+function getFeed(){
+    let html = "";    
+    posts.forEach(function(post) {   
+      //Iterate through each post of posts, similar to for loop or for of, but we apply the function directly in the method.
+    html += `
+```
+
 ### Continued development
 
+Accessibility - how to do alt text for rendered images
 
 ### Useful resources
 
