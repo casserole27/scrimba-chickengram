@@ -63,13 +63,18 @@ function getFeed(){
                 alt="heart-shaped icon">
              
 
-            <img src="images/icon-comment.png" 
-                class="icons"
-                alt="word cloud comment icon">
-            <img src="images/icon-dm.png" 
-                class="icons"
-                alt="direct message arrow icon">
+            <a href="https://www.backyardchickens.com/" target="_blank">
+                <img src="images/icon-comment.png" 
+                    class="icons"
+                    alt="word cloud comment icon">
+              </a>
             
+            <a href="${post.content}" target="_blank">  
+                <img src="images/icon-dm.png" 
+                    class="icons"
+                    alt="direct message arrow icon">
+            </a>
+
             </div> <!--close icons-container div-->    
 
             <p class="likes margin-bottom font-weight">

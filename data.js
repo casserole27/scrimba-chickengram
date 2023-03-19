@@ -6,6 +6,7 @@ export const posts = [
         post: "images/post-mrsbusiness.jpg",
         username: "thebusiness2014",
         comment: "I am a naughty bird.",
+        content: "https://www.mypetchicken.com/pages/marans",
         likes: 21,
         isLiked: false,
         postid: "1"
@@ -17,6 +18,7 @@ export const posts = [
         post: "images/post-beardiebird.jpg",
         username: "thebeardiestbird2000",
         comment: "I like sausages!!!",
+        content: "https://www.mypetchicken.com/pages/ameraucana",
         likes: 4,
         isLiked: false,
         postid: "2"
@@ -24,11 +26,12 @@ export const posts = [
     
     {
         name: "Mr. Pickleman",
-        location: "in the garden eating pickles",
+        location: "outside building stuff",
         avatar: "images/avatar-mrpickleman.jpg",
         post: "images/post-checkers.jpg",
         username: "dabigboi42",
         comment: "Why me?!?!",    
+        content: "https://www.mypetchicken.com/pages/brahma",
         likes: 152,
         isLiked: false,
         postid: "3"
@@ -41,6 +44,7 @@ export const posts = [
         post: "images/post-mrsjiggles.jpg",
         username: "itsthejiggles27",
         comment: "Look at ma jiggles!!!",    
+        content: "https://www.mypetchicken.com/pages/leghorn-white",
         likes: 1980,
         isLiked: false,
         postid: "4"
@@ -53,6 +57,7 @@ export const posts = [
         post: "images/post-billina.jpg",
         username: "billinaofoz1939",
         comment: "Don't touch my babbies.",    
+        content: "https://www.mypetchicken.com/pages/orpington",
         likes: 42,
         isLiked: false,
         postid: "5"
