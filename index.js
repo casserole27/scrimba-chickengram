@@ -12,6 +12,9 @@ import { posts } from './data.js'
     
 /****** RENDER POSTS ******/
 
+
+//! Make an HTML feed using .forEach() to iterate over data.js
+//! Use the ${post.element} syntax to display unique data where needed
 function getFeed(){
     let html = "";    
     posts.forEach(function(post) {   
@@ -97,14 +100,15 @@ function getFeed(){
 })
     return html;
 }    
-    
+
+//! Render the HTML into the HTML "main container" of the document
 function renderFeed() {
     const mainContainer = document.getElementById("main-container").innerHTML = getFeed();
 }
 
 renderFeed();
 
- 
+//!Event delegation to double click heart icons 
 document.addEventListener("dblclick", function(e) {
         
     const target = e.target.dataset.like;
@@ -115,17 +119,23 @@ document.addEventListener("dblclick", function(e) {
 
 function likeClicks(postId) {
       
-     const targetPost = posts.filter(function(post) {
+    //! Using .filter(), find the post id that is equal to the target
+    //! The [0] at the end is the object index so it's not using the array
+    const targetPost = posts.filter(function(post) {
         return post.postid === postId;
     })[0]
-    
+
+    //! Increment and decrement likes
     if (targetPost.isLiked) {
         targetPost.likes--;
                
     } else {
         targetPost.likes++
     }; 
-   targetPost.isLiked = !targetPost.isLiked;
-    
+   
+    //!This logic prevents the likes from continuing to increment.
+    targetPost.isLiked = !targetPost.isLiked;
+   
+    //! Render feed with the changes
      renderFeed();
 }         
