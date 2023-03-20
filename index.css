@@ -139,7 +139,8 @@ button {
      opacity: .5;
 }
 
-.icons:hover {
+.icons:hover,
+.icons:focus {
     opacity: 1;
 }
 
