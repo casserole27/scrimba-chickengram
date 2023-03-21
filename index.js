@@ -49,7 +49,7 @@ function getFeed(){
         <section class="image-container background-color">
 
             <img src="${post.post}"
-                alt="image of ${post.username}" 
+                alt="${post.alt}" 
                 class="post-image"
                 id="post-image">
 
