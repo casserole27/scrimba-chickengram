@@ -39,11 +39,13 @@ Personal stretch goals:
 
 ### Screenshot
 
+![Chickengram-screenshot](/images/Screenshot%202023-03-21%20at%2021-02-12%20Chickengram.png)
+
 ### Links
 
 - [Scrim](https://scrimba.com/scrim/cocf840e8981a3822a7204ebd)
-- [Github](https://github.com/casserole27/oldagram)
-- [Live Site](https://www.clewisdev.com/oldagram/)
+- [Github](https://github.com/casserole27/scrimba-chickengram)
+- [Live Site](https://www.clewisdev.com/scrimba-chickengram/)
 
 ## My process
 

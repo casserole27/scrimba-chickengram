@@ -65,25 +65,32 @@ button {
 
 /****** HEADER LAYOUT ******/
 
-.header-container {
+header {
     max-width: 375px;
+}
+
+.header-container {
+    width: 100%;
     background-color: var(--background-color);
     padding: .5rem 1rem;
     border-bottom: 2px solid lightgray;
 
     display: flex;
     align-items: center;
-    gap: 5rem;
+    justify-content: space-between;
+    gap: 4.5rem;
+    
 }
 
 .logo {
     font-family: 'Neucha', cursive;
     font-size: 3rem;
+    margin-right: .5rem;
 }
 
 @media (max-width: 350px) {
     .header-container {
-        gap: 2rem;
+        gap: 1rem;
     }
 }
 
@@ -144,7 +151,7 @@ button {
     opacity: 1;
 }
 
-/****** TURN HEART RED ******/
+/****** TURN HEART RED ******/ /*TODO IDEA */
 
 .icon-likes {
     background-color: red;
