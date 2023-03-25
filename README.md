@@ -106,12 +106,19 @@ function getFeed(){
     posts.forEach(function(post) {   
       //Iterate through each post of posts, similar to for loop or for of, but we apply the function directly in the method.
     html += `
+    })
+    }
 ```
 
 ### Continued development
 
-- Accessibility - how to do alt text for rendered images
-- Turn heart red
+- Accessibility - how to do alt text for rendered images: fixed
+I put the alt tags in data.js.
+
+Code reviewer
+- Turn heart red with icons (font awesome)
+- Add dataset to image so it also increments likes
+- Add modal once feature is clicked / liked
 
 ### Useful resources
 
